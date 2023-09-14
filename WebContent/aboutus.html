@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script language="JavaScript" src="js/jquery.js"></script>
+	<script>
+		var i = 0;
+			
+			setInterval(function change() {
+				i++;
+			$("#us")[0].src = "img/"+i+".jpg"; 
+			if(i==1){
+				$("#usdiv").slideToggle(2000);
+			}
+			 
+			if(i==2){
+				$("#usdiv").slideToggle(2000);
+				i = 0;
+			}
+        
+    }, 3000 );
+		
+		
+	</script>
+	</head>
+	<body>
+		
+		
+		<div id="aboutus">
+			<input type="button" class="loginbtn" id="clickus" value="点击查看我们" /><br />
+			<div id="usdiv">
+				<img id="us" src="img/1.jpg" />
+			</div>
+			
+		</div>
+	</body>
+</html>
